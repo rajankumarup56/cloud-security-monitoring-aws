@@ -1,4 +1,4 @@
-# Cloud Security Monitoring & Alerting on AWS
+# Cloud Security Monitoring and Alerting on AWS
 
 Real-time detection and alerting for suspicious AWS activity using native AWS services.
 This project demonstrates security monitoring, alert automation, and DevOps best practices.
@@ -36,7 +36,7 @@ The monitoring pipeline works as follows:
 
 ---
 
-## Tech Stack
+## Tech Stack / Services Used
 - AWS CloudTrail
 - AWS CloudWatch (Logs, Metric Filters, Alarms)
 - Amazon SNS
