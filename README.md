@@ -43,27 +43,21 @@ This project demonstrates how to implement cloud security monitoring in an AWS e
 
 ## Screenshots
 
-### CloudTrail Trail
+### CloudTrail Dashboard
 
-![CloudTrail](screenshots/cloudtrail-trail.png)
+![CloudTrail](screenshots/cloudtrail-dashboard.png)
 
-### CloudWatch Log Group
-
-![CloudWatch Logs](screenshots/cloudwatch-log-group.png)
-
-### Metric Filter
+### CloudWatch Metric Filter
 
 ![Metric Filter](screenshots/metric-filter.png)
 
-### CloudWatch Alarm
+### CloudWatch Alarm Configuration
 
-![Alarm](screenshots/cloudwatch-alarm.png)
+![CloudWatch Alarm](screenshots/cloudwatch-alarm.png)
 
-### SNS Email Notification
+### SNS Notification Setup
 
-![SNS Alert](screenshots/sns-email-alert.png)
-
----
+![SNS Notification](screenshots/sns-notification.png)
 
 ## Learning Outcomes
 
