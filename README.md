@@ -1,72 +1,78 @@
-# Cloud Security Monitoring and Alerting on AWS
+# Cloud Security Monitoring on AWS
 
-Real-time detection and alerting for suspicious AWS activity using native AWS services.
-This project demonstrates security monitoring, alert automation, and DevOps best practices.
+## Overview
 
----
-
-## Why this project?
-In cloud environments, visibility and security monitoring are critical responsibilities of a DevOps engineer.
-This project focuses on:
-- Detecting suspicious or risky AWS actions
-- Generating real-time alerts
-- Applying least-privilege IAM principles
-- Automating monitoring using Infrastructure as Code
+This project demonstrates how to implement cloud security monitoring in an AWS environment using CloudTrail and Amazon CloudWatch. The goal is to detect suspicious activities and trigger automated alerts.
 
 ---
 
-## Architecture Overview
-The monitoring pipeline works as follows:
+## Architecture
 
-1. AWS CloudTrail records account activity
-2. Logs are sent to CloudWatch Logs
-3. Metric filters detect suspicious events
-4. CloudWatch Alarms are triggered
-5. Alerts are delivered via SNS email notifications
-6. Optional processing is handled using AWS Lambda
+![Architecture](architecture-diagram.png)
 
 ---
 
-## Security Alerts Implemented
-- Root account usage detection
-- Unauthorized API calls
-- AWS Console login failures
-- IAM policy and role changes
-- Security group modifications
+## AWS Services Used
 
----
-
-## Tech Stack / Services Used
 - AWS CloudTrail
-- AWS CloudWatch (Logs, Metric Filters, Alarms)
+- Amazon CloudWatch
 - Amazon SNS
-- AWS Lambda
-- IAM
-- Terraform
+- AWS IAM
 
 ---
 
-## Infrastructure as Code
-All AWS resources are provisioned using Terraform, ensuring:
-- Repeatability
-- Version control
-- Minimal manual configuration
+## Key Features
+
+- Monitor AWS account activity using CloudTrail
+- Send logs to CloudWatch for monitoring
+- Create metric filters for detecting suspicious actions
+- Configure CloudWatch alarms
+- Send alerts through SNS notifications
+
+---
+
+## Implementation Steps
+
+1. Enable CloudTrail for AWS account activity logging  
+2. Send CloudTrail logs to CloudWatch Logs  
+3. Create metric filters for suspicious events  
+4. Configure CloudWatch alarms  
+5. Set up SNS notifications for alerts  
 
 ---
 
 ## Screenshots
-Screenshots demonstrating active alarms and alert notifications are available in the `screenshots/` directory.
+
+### CloudTrail Trail
+
+![CloudTrail](screenshots/cloudtrail-trail.png)
+
+### CloudWatch Log Group
+
+![CloudWatch Logs](screenshots/cloudwatch-log-group.png)
+
+### Metric Filter
+
+![Metric Filter](screenshots/metric-filter.png)
+
+### CloudWatch Alarm
+
+![Alarm](screenshots/cloudwatch-alarm.png)
+
+### SNS Email Notification
+
+![SNS Alert](screenshots/sns-email-alert.png)
 
 ---
 
-## Project Status
-🚧 Actively improving
-- Adding more alert scenarios
-- Enhancing documentation
-- Improving Terraform modularity
+## Learning Outcomes
+
+- Understanding AWS monitoring and logging
+- Implementing security-focused cloud monitoring
+- Automating alert notifications using SNS
 
 ---
 
-## Disclaimer
-This project is created for learning and demonstration purposes.
-It does not represent a production security system.
+## Author
+
+Ranjan Kumar Upadhyay
