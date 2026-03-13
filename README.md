@@ -1,14 +1,14 @@
 # Cloud Security Monitoring on AWS
 
-## Overview
+## Project Overview
 
-This project demonstrates how to implement cloud security monitoring in an AWS environment using CloudTrail and Amazon CloudWatch. The goal is to detect suspicious activities and trigger automated alerts.
+This project demonstrates how to implement cloud security monitoring in an AWS environment using AWS CloudTrail and Amazon CloudWatch. The setup detects suspicious activities in the AWS account and automatically sends alerts using Amazon SNS.
 
 ---
 
 ## Architecture
 
-![Architecture](architecture-diagram.png)
+![Architecture Diagram](architecture-diagram.png)
 
 ---
 
@@ -25,19 +25,37 @@ This project demonstrates how to implement cloud security monitoring in an AWS e
 
 - Monitor AWS account activity using CloudTrail
 - Send logs to CloudWatch for monitoring
-- Create metric filters for detecting suspicious actions
+- Create metric filters to detect suspicious events
 - Configure CloudWatch alarms
-- Send alerts through SNS notifications
+- Send automated alerts using SNS notifications
 
 ---
 
 ## Implementation Steps
 
-1. Enable CloudTrail for AWS account activity logging  
+1. Enable AWS CloudTrail to log account activities  
 2. Send CloudTrail logs to CloudWatch Logs  
-3. Create metric filters for suspicious events  
-4. Configure CloudWatch alarms  
-5. Set up SNS notifications for alerts  
+3. Create metric filters for detecting suspicious activities  
+4. Configure CloudWatch alarms based on the metric filters  
+5. Set up SNS notifications to receive email alerts  
+
+---
+
+## Architecture Flow
+
+User Activity  
+↓  
+AWS CloudTrail  
+↓  
+CloudWatch Logs  
+↓  
+Metric Filter  
+↓  
+CloudWatch Alarm  
+↓  
+SNS Notification  
+↓  
+Email Alert  
 
 ---
 
@@ -59,11 +77,14 @@ This project demonstrates how to implement cloud security monitoring in an AWS e
 
 ![SNS Notification](screenshots/sns-notification.png)
 
+---
+
 ## Learning Outcomes
 
-- Understanding AWS monitoring and logging
-- Implementing security-focused cloud monitoring
-- Automating alert notifications using SNS
+- Understanding AWS logging and monitoring
+- Implementing security monitoring in AWS
+- Creating automated alerting systems
+- Improving cloud security visibility
 
 ---
 
