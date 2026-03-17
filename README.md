@@ -1,90 +1,54 @@
 # Cloud Security Monitoring on AWS
 
-## Project Overview
-
-This project demonstrates how to implement cloud security monitoring in an AWS environment using AWS CloudTrail and Amazon CloudWatch. The setup detects suspicious activities in the AWS account and automatically sends alerts using Amazon SNS.
+🔹 Implemented real-time security monitoring using AWS CloudTrail, CloudWatch and SNS alerts.
 
 ---
 
-## Architecture
+## Architecture Diagram
 
-![Architecture Diagram](architecture-diagram.png)
+![Architecture](architecture-diagram.png)
+
+---
+
+## Architecture Workflow
+
+1. CloudTrail captures all API activity
+2. Logs are sent to CloudWatch
+3. Metric filters detect suspicious activity
+4. CloudWatch Alarms trigger alerts
+5. SNS sends email notifications
 
 ---
 
 ## AWS Services Used
 
-- AWS CloudTrail
-- Amazon CloudWatch
-- Amazon SNS
-- AWS IAM
-
----
-
-## Key Features
-
-- Monitor AWS account activity using CloudTrail
-- Send logs to CloudWatch for monitoring
-- Create metric filters to detect suspicious events
-- Configure CloudWatch alarms
-- Send automated alerts using SNS notifications
-
----
-
-## Implementation Steps
-
-1. Enable AWS CloudTrail to log account activities  
-2. Send CloudTrail logs to CloudWatch Logs  
-3. Create metric filters for detecting suspicious activities  
-4. Configure CloudWatch alarms based on the metric filters  
-5. Set up SNS notifications to receive email alerts  
-
----
-
-## Architecture Flow
-
-User Activity  
-↓  
-AWS CloudTrail  
-↓  
-CloudWatch Logs  
-↓  
-Metric Filter  
-↓  
-CloudWatch Alarm  
-↓  
-SNS Notification  
-↓  
-Email Alert  
+* CloudTrail
+* CloudWatch
+* SNS
+* S3
 
 ---
 
 ## Screenshots
 
-### CloudTrail Dashboard
+## CloudTrail Logs
 
-![CloudTrail](screenshots/cloudtrail-dashboard.png)
+![CloudTrail](screenshots/cloudtrail-logs.png)
 
-### CloudWatch Metric Filter
+## CloudWatch Metrics
 
-![Metric Filter](screenshots/metric-filter.png)
+![CloudWatch](screenshots/cloudwatch-monitoring.png)
 
-### CloudWatch Alarm Configuration
+## Alarm Configuration
 
-![CloudWatch Alarm](screenshots/cloudwatch-alarm.png)
-
-### SNS Notification Setup
-
-![SNS Notification](screenshots/sns-notification.png)
+![Alarm](screenshots/alarm.png)
 
 ---
 
-## Learning Outcomes
+## Related Project
 
-- Understanding AWS logging and monitoring
-- Implementing security monitoring in AWS
-- Creating automated alerting systems
-- Improving cloud security visibility
+AWS Highly Available Web Architecture
+https://github.com/rajankumarup56/aws-highly-available-web-architecture
 
 ---
 
