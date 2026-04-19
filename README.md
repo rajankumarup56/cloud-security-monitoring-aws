@@ -1,57 +1,101 @@
-# Cloud Security Monitoring on AWS
+# 🔐 Cloud Security Monitoring on AWS
 
-🔹 Implemented real-time security monitoring using AWS CloudTrail, CloudWatch and SNS alerts.
+## 📌 Overview
 
----
+This project simulates a real-world cloud security monitoring system used in production environments.
 
-## Architecture Diagram
+This project demonstrates a real-time AWS security monitoring system using:
 
-![Architecture](architecture-diagram.png)
-
----
-
-## Architecture Workflow
-
-1. CloudTrail captures all API activity
-2. Logs are sent to CloudWatch
-3. Metric filters detect suspicious activity
-4. CloudWatch Alarms trigger alerts
-5. SNS sends email notifications
+- AWS CloudTrail (activity tracking)
+- Amazon CloudWatch (log monitoring)
+- Metric Filters & Alarms (threat detection)
+- SNS (alert notifications)
 
 ---
 
-## AWS Services Used
+## 🏗️ Architecture Diagram
 
-* CloudTrail
-* CloudWatch
-* SNS
-* S3
+![Architecture](./architecture-diagram.png)
 
 ---
 
-## Screenshots
+## ⚙️ Architecture Workflow
 
-## CloudTrail Logs
-
-![CloudTrail](screenshots/cloudtrail-logs.png)
-
-## CloudWatch Metrics
-
-![CloudWatch](screenshots/cloudwatch-monitoring.png)
-
-## Alarm Configuration
-
-![Alarm](screenshots/alarm.png)
+1. CloudTrail captures all API activity  
+2. Logs are sent to CloudWatch  
+3. Metric filters detect suspicious activity  
+4. CloudWatch alarms trigger alerts  
+5. SNS sends email notifications  
 
 ---
 
-## Related Project
+## 📸 Project Screenshots
 
-AWS Highly Available Web Architecture
-https://github.com/rajankumarup56/aws-highly-available-web-architecture
+### 🔹 Repository Overview
+![Repo](./repo-overview.png)
 
 ---
 
-## Author
+### 🔹 CloudTrail Setup
+![CloudTrail](./cloudtrail-dashboard.png)
 
-Ranjan Kumar Upadhyay
+---
+
+### 🔹 S3 Logs Storage
+![S3 Logs](./s3-logs.png)
+
+---
+
+### 🔹 CloudWatch Logs
+![CloudWatch](./cloudwatch-logs.png)
+
+---
+
+### 🔹 SNS Alerts
+![SNS](./sns-alert.png)
+
+---
+
+## 🚀 Key Features
+
+- Real-time AWS activity monitoring  
+- Automated threat detection using metric filters  
+- Alert system using SNS notifications  
+- Secure logging and storage using S3  
+- Scalable and production-ready architecture  
+
+---
+
+## 🛠️ Tech Stack
+
+- AWS CloudTrail (Activity Tracking)  
+- Amazon CloudWatch (Logs & Monitoring)  
+- AWS SNS (Notifications)  
+- Amazon S3 (Log Storage)  
+- Terraform (Infrastructure as Code)  
+
+## 📂 Project Structure
+
+```
+.
+├── architecture/
+├── lambda/
+├── terraform/
+├── architecture-diagram.png
+├── cloudtrail-dashboard.png
+├── cloudwatch-logs.png
+├── s3-logs.png
+├── sns-alert.png
+├── repo-overview.png
+└── README.md
+```
+
+## 🎯 Conclusion
+
+This project showcases a complete AWS security monitoring pipeline that detects and alerts on suspicious activities in real time. It highlights hands-on experience with cloud security, monitoring, and DevOps practices.
+
+---
+
+## 👨‍💻 Author
+
+**Ranjan Kumar Upadhyay**
