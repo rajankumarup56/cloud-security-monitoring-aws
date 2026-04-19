@@ -46,7 +46,7 @@ This project demonstrates a real-time AWS security monitoring system using:
 
 ---
 
-### 🔹 CloudWatch Logs
+### 🔹 CloudWatch Alarms & Monitoring
 ![CloudWatch](./cloudwatch-logs.png)
 
 ---
